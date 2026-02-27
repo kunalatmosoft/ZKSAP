@@ -2,6 +2,14 @@
 
 ZKSAP is a decentralized, passwordless authentication framework built on **Ed25519 Elliptic Curve Cryptography** and **BIP-39 Mnemonic Derivation**. It eliminates the need for central password storage, making authentication immune to database breaches and phishing.
 
+
+![Security](https://img.shields.io/badge/Cryptography-Ed25519-blueviolet?style=for-the-badge&logo=secret-network)
+![Mnemonic](https://img.shields.io/badge/Recovery-BIP--39-orange?style=for-the-badge&logo=bitcoin)
+![Protocol](https://img.shields.io/badge/Protocol-ZKSAP-00b894?style=for-the-badge)
+![Encryption](https://img.shields.io/badge/Identity-Self--Custody-red?style=for-the-badge&logo=lock)
+![ZKP](https://img.shields.io/badge/Auth-Zero--Knowledge-lightgrey?style=for-the-badge)
+
+
 ## 🛠 Cryptographic Foundations
 
 | Library | Purpose |
@@ -211,5 +219,9 @@ By using **Ed25519**, ZKSAP provides:
 1. **Zero-Knowledge:** The server validates the proof without learning the secret.
 2. **Immutability:** Identity is mathematically tied to the 12 words.
 3. **Forward Secrecy:** Stolen session tokens do not compromise the master key.
+
+### OWNER : KUNAL SINGH
+
+THANK YOU 🤝 
 
 ---
