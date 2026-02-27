@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     const session = db.getSessionByToken(sessionToken);
     
     if (!session) {
-      console.log('[v0] Logout API: Session not found or already expired');
+      console.log('[zksap] Logout API: Session not found or already expired');
       return NextResponse.json(
         { success: true, message: 'Session already cleared' },
         { status: 200 }
@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 2. Perform the deletion in the database
-    console.log('[v0] Logout API: Deleting session for user:', session.userId);
+    console.log('[zksap] Logout API: Deleting session for user:', session.userId);
     db.deleteSession(sessionToken);
 
     return NextResponse.json(
@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    console.error('[v0] Logout API error:', errorMessage);
+    console.error('[zksap] Logout API error:', errorMessage);
     
     return NextResponse.json(
       { error: 'Internal server error during logout' },
