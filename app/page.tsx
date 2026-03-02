@@ -63,6 +63,11 @@ export default function Home() {
                   Login
                 </Button>
               </Link>
+              <Link href="/docs">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  How It Works!
+                </Button>
+              </Link>
             </div>
 
             <p className="text-sm text-muted-foreground">
